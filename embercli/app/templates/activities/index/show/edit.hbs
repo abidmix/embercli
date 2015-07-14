@@ -1,0 +1,19 @@
+<article id="lead">
+
+<form>
+<fieldset>
+<dl>
+ <dt> <label> Code</label></dt>
+ <dd>{{view Ember.TextField value=model.code}}</dd>
+ </dl>
+<dl>
+ <dt> <label> Description</label></dt>
+ <dd>{{view Ember.TextField value=model.description}}</dd>
+ </dl>
+ </fieldset>
+         <a href='#' {{action 'delete'}} >Delete </a>
+       <input {{action 'saveChanges'}} value="Save Changes" type="submit"/>
+     <a href="#" {{action 'cancel'}} class="cancel">Cancel</a>
+	
+ </form>
+ </article>
